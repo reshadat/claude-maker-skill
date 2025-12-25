@@ -23,8 +23,6 @@ A Claude Code skill that enables systematic code generation through extreme deco
 
 ## Installation
 
-### Option 1: Copy to Claude Config
-
 Copy the files to your Claude configuration:
 
 ```bash
@@ -37,19 +35,18 @@ cp skills/maker-coder/SKILL.md ~/.claude/skills/maker-coder/
 cp commands/maker.md ~/.claude/commands/
 ```
 
-### Option 2: Symlink (for development)
-
-```bash
-ln -s "$(pwd)/skills/maker-coder/SKILL.md" ~/.claude/skills/maker-coder/SKILL.md
-ln -s "$(pwd)/commands/maker.md" ~/.claude/commands/maker.md
-```
-
 ## Usage
 
 ### Slash Command
 
 ```
 /maker Build a REST API with authentication
+```
+
+### Natural Language
+
+```
+Use the MAKER framework to build a REST API with authentication
 ```
 
 ### Automatic Triggering
